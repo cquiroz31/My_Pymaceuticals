@@ -1,35 +1,25 @@
-# Pymaceuticals Review
+# Pymaceuticals
 
-## Summary
-This data analysis consists of results from a study of mice with tumors and the effect of different drug regimens on the volume of the tumors. The orignal data is saved in csv form in data directory. The data about each test subject is in mouse_metadata.csv and the results of the study is in Study_results.csv. You should be one directory ahead of the data directory in order to run the code correctly. You can find the code by clicking [here](Pymaceutical.ipynb).
+### Python Jupyter Notebook that analyzes lab results of pharmaceutical drugs used on mice for tumor reduction.
 
-## Data analysis
+The situation: As a senior data analyst at your research facility, you've been given access to the complete data from their most recent animal study. In this study, 250 mice identified with SCC tumor growth were treated through a variety of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens. You have been tasked by the executive team to generate all of the tables and figures needed for the technical report of the study. The executive team also has asked for a top-level summary of the study results.
 
-The first part of the analysis was running a statistics summary on tumor volume across all drug regimens. The summary is pictured below.
+Using MatPlotLib and Pandas Python libraries in a Jupyter notebook, the following is generated:
 
+A summary statistics table consisting of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen.
 
-![Statistics Summary](Images/matplotlib%20stat%20screenshot.PNG)
+A bar plot using both Pandas's DataFrame.plot() and Matplotlib's pyplot that shows the number of data points for each treatment regimen.
 
-The second part compared creating a pie chart and a bar chart through matplotlib.pyplot and through the use of pandas. The result was identical charts.
+A pie plot using both Pandas's DataFrame.plot() and Matplotlib's pyplot that shows the distribution of female or male mice in the study.
 
-![Bar Chart](Images/barchart.png)
+Calculation of the final tumor volume of each mouse across four of the most promising treatment regimens (Capomulin, Ramicane, Infubinol, and Ceftamin), the quartiles, IQR and potential outliers across all four treatment regimens.
 
-![Pie Chart](Images/piechart.png)
+A box and whisker plot of the final tumor volume for all four treatment regimens and highlight any potential outliers in the plot by changing their color and style.
 
-The next part included analyzing the data quantitavely with box and whisker plots, and qualitatively by calculating the quartiles, IQR and outliers.
+A line plot of time point versus tumor volume for a single mouse treated with Capomulin.
 
-![Box and Whisker Plots](Images/boxplots.png)
+A scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen.
 
-The next section included comparing tumor volume measurements from one mouse that was being treated by Capomulin.
+Calculation of the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. Plotted the linear regression model on top of the previous scatter plot.
 
-![Line Chart](Images/linechart.png)
-
-The final section measured the correlation between the average tumor volume and the weight of the subject. Two charts were created, a scatter chart to show the data and the same scatter chart with the line regression.
-
-![Scatter Chart](Images/scatter.png)
-![Scatter with Line Regression](Images/lineregress.png)
-
-_You can also find these images in the Image directory_
-
-## Obervations based on data analyzed
-Three observations can be found at beginning of the final code. Feel free to run your own simulations and discover more conclusions.
+Observations or inferences that can made from the data included at the top of the notebook.
